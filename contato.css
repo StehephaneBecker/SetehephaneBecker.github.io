@@ -1,0 +1,147 @@
+/* Estilo básico do corpo da página */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte padrão */
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o padding padrão */
+  background: linear-gradient(135deg, #f3e5f5, #e1bee7); /* Define um fundo gradiente em tons de rosa claro */
+  color: #333; /* Define a cor do texto padrão */
+  overflow-x: hidden; /* Impede o scroll horizontal */
+  animation: fadeIn 1s ease-in; /* Aplica uma animação de fade-in ao carregar a página */
+}
+
+/* Estilo do cabeçalho */
+header {
+  background: #4a148c; /* Define a cor de fundo do cabeçalho */
+  padding: 1rem 0; /* Adiciona padding vertical */
+}
+
+/* Estilo do menu de navegação */
+nav ul {
+  list-style-type: none; /* Remove os marcadores de lista */
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o padding padrão */
+  display: flex; /* Exibe os itens do menu em linha */
+  justify-content: center; /* Centraliza o menu na página */
+}
+
+/* Estilo dos itens da lista de navegação */
+nav ul li {
+  margin: 0 1rem; /* Adiciona espaço entre os itens do menu */
+}
+
+/* Estilo dos links de navegação */
+nav ul li a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: white; /* Define a cor dos links como branca */
+  font-weight: bold; /* Deixa o texto em negrito */
+  font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+  transition: color 0.3s; /* Transição suave para a cor dos links */
+}
+
+/* Efeito de hover nos links de navegação */
+nav ul li a:hover {
+  color: #f8f9fc; /* Muda a cor do link ao passar o mouse */
+  transform: scale(1.1); /* Aumenta o tamanho do link ao passar o mouse */
+}
+
+/* Estilo da seção de contato */
+.contact-section {
+  padding: 2rem; /* Padding interno */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do título da seção de contato */
+.contact-section h1 {
+  color: #6d28d9; /* Define a cor do texto */
+  margin-bottom: 1rem; /* Adiciona margem inferior */
+  font-size: 2rem; /* Aumenta o tamanho da fonte */
+  animation: slideIn 1s ease-out; /* Aplica uma animação de slide-in */
+}
+
+/* Estilo do formulário de contato */
+.contact-form {
+  max-width: 600px; /* Largura máxima do formulário */
+  margin: 0 auto; /* Centraliza o formulário */
+  background: #fff; /* Fundo branco */
+  padding: 2rem; /* Padding interno */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra ao redor do formulário */
+}
+
+/* Estilo dos rótulos (labels) do formulário de contato */
+.contact-form label {
+  display: block; /* Exibe o label como bloco */
+  margin: 1rem 0 0.5rem; /* Adiciona margem superior e inferior */
+  color: #6d28d9; /* Define a cor do texto */
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Estilo dos campos de input e textarea do formulário */
+.contact-form input, 
+.contact-form textarea {
+  width: 100%; /* Define a largura total */
+  padding: 0.75rem; /* Padding interno */
+  border: 1px solid #ddd; /* Define a borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  margin-bottom: 1rem; /* Margem inferior */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transições suaves para cor da borda e sombra */
+}
+
+/* Efeito de foco nos campos do formulário */
+.contact-form input:focus, 
+.contact-form textarea:focus {
+  border-color: #4a148c; /* Muda a cor da borda ao focar */
+  box-shadow: 0 0 5px rgba(213, 166, 193, 0.5); /* Adiciona uma sombra ao focar */
+  outline: none; /* Remove o outline padrão */
+}
+
+/* Estilo do botão de envio do formulário */
+.contact-form button {
+  background: #6d28d9; /* Fundo roxo */
+  color: white; /* Texto branco */
+  border: none; /* Remove a borda */
+  padding: 0.75rem 1.5rem; /* Padding interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 1rem; /* Tamanho da fonte */
+  cursor: pointer; /* Muda o cursor ao passar o mouse */
+  transition: background 0.3s, transform 0.3s; /* Transições suaves para fundo e transformação */
+}
+
+/* Efeito de hover no botão do formulário */
+.contact-form button:hover {
+  background: #4c1d95; /* Muda a cor de fundo ao passar o mouse */
+  transform: scale(1.05); /* Aumenta o botão levemente ao passar o mouse */
+}
+
+/* Estilo do rodapé */
+footer {
+  background: #4a148c; /* Fundo roxo */
+  color: white; /* Texto branco */
+  text-align: center; /* Centraliza o texto */
+  padding: 1rem; /* Padding interno */
+  position: absolute; /* Posiciona o rodapé no final da página */
+  bottom: 0; /* Posiciona o rodapé no fundo da tela */
+  width: 100%; /* Largura total */
+}
+
+/* Animação de fade-in (aparecer gradualmente) */
+@keyframes fadeIn {
+  from {
+      opacity: 0; /* Inicia invisível */
+  }
+  to {
+      opacity: 1; /* Fica completamente visível */
+  }
+}
+
+/* Animação de slide-in (deslizar de cima para baixo) */
+@keyframes slideIn {
+  from {
+      transform: translateY(-50px); /* Inicia deslocado 50px para cima */
+      opacity: 0; /* Inicia invisível */
+  }
+  to {
+      transform: translateY(0); /* Desliza para a posição normal */
+      opacity: 1; /* Fica completamente visível */
+  }
+}

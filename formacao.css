@@ -1,0 +1,162 @@
+/* Zera as margens e o padding de todos os elementos e define o box-sizing para incluir padding e bordas dentro do tamanho total dos elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte padrão */
+  line-height: 1.6; /* Define a altura da linha para uma boa legibilidade */
+  background: linear-gradient(135deg, #f3e5f5, #e1bee7); /* Fundo gradiente em tons de rosa e lilás */
+  color: #333; /* Define a cor padrão do texto */
+}
+
+/* Estilo do cabeçalho */
+header {
+  background: #6a1b9a; /* Cor de fundo do cabeçalho */
+  color: #fff; /* Cor do texto do cabeçalho */
+  padding: 15px 0; /* Padding interno para espaçamento vertical */
+  position: sticky; /* Faz o cabeçalho fixar no topo ao rolar a página */
+  top: 0; /* Alinha o cabeçalho ao topo da página */
+  z-index: 1000; /* Define a prioridade da sobreposição do cabeçalho */
+  transition: background 0.3s ease, box-shadow 0.3s ease; /* Transições suaves ao interagir com o cabeçalho */
+}
+
+/* Efeito ao passar o mouse sobre o cabeçalho */
+header:hover {
+  background: #4a148c; /* Muda a cor do fundo ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Adiciona sombra ao passar o mouse */
+}
+
+/* Estilo do menu de navegação */
+nav ul {
+  display: flex; /* Exibe os itens em linha */
+  justify-content: center; /* Centraliza o menu de navegação */
+  list-style: none; /* Remove os marcadores de lista */
+}
+
+/* Estilo dos itens do menu */
+nav ul li {
+  margin: 0 20px; /* Adiciona espaço entre os itens do menu */
+}
+
+/* Estilo dos links do menu de navegação */
+nav ul li a {
+  color: #fff; /* Cor do texto dos links */
+  text-decoration: none; /* Remove a sublinhado dos links */
+  font-weight: bold; /* Define o texto em negrito */
+  display: flex; /* Exibe o ícone e o texto em linha */
+  align-items: center; /* Alinha verticalmente ícone e texto */
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves ao interagir com os links */
+}
+
+/* Espaçamento entre o ícone e o texto do link */
+nav ul li a i {
+  margin-right: 8px; /* Adiciona espaço entre o ícone e o texto */
+}
+
+/* Efeito ao passar o mouse sobre os links do menu */
+nav ul li a:hover {
+  color: #ff80ab; /* Muda a cor do texto ao passar o mouse */
+  transform: scale(1.1) rotate(5deg); /* Aumenta e rotaciona o link ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao passar o mouse */
+}
+
+/* Estilo da área principal do conteúdo */
+main {
+  padding: 20px; /* Adiciona espaço interno */
+  max-width: 1200px; /* Define a largura máxima do conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo na página */
+  animation: fadeIn 1s ease-out; /* Aplica uma animação de fade-in ao carregar o conteúdo */
+}
+
+/* Estilo da seção de formação educacional */
+.formation {
+  text-align: center; /* Centraliza o texto */
+  padding: 40px 20px; /* Adiciona espaçamento interno */
+  background: linear-gradient(145deg, #e1bee7, #f3e5f5); /* Fundo gradiente em tons claros */
+  color: #ffffff; /* Cor do texto */
+  border-radius: 12px; /* Bordas arredondadas */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra ao redor da seção */
+  animation: fadeIn 1s ease-out; /* Animação de fade-in ao carregar a seção */
+}
+
+/* Estilo do título da seção de formação */
+.formation h1 {
+  font-size: 2.5em; /* Aumenta o tamanho do título */
+  margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+  animation: fadeIn 1s ease-out, slideIn 1s ease-out; /* Animações de fade-in e slide-in ao carregar */
+}
+
+/* Estilo da lista de formações */
+.education {
+  display: flex; /* Exibe as formações em um layout flexível */
+  flex-direction: column; /* Organiza os itens em coluna */
+  gap: 20px; /* Adiciona espaço entre as formações */
+  margin-top: 20px; /* Adiciona espaço acima da lista de formações */
+}
+
+/* Estilo de cada formação acadêmica */
+.degree {
+  background: #d500f9; /* Cor de fundo de cada formação */
+  color: #fff; /* Cor do texto */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor de cada formação */
+  transition: background 0.3s ease, transform 0.3s ease; /* Transições suaves ao interagir com cada formação */
+  animation: fadeIn 1.5s ease-out; /* Animação de fade-in ao carregar cada formação */
+}
+
+/* Efeito ao passar o mouse sobre cada formação */
+.degree:hover {
+  background: #ab47bc; /* Muda a cor de fundo ao passar o mouse */
+  transform: scale(1.05); /* Aumenta levemente a formação ao passar o mouse */
+}
+
+/* Estilo do título de cada formação */
+.degree h2 {
+  font-size: 1.8em; /* Aumenta o tamanho do título */
+  margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+/* Estilo dos detalhes de cada formação */
+.degree p {
+  font-size: 1.2em; /* Aumenta o tamanho do texto */
+  margin-bottom: 10px; /* Espaço abaixo dos detalhes */
+}
+
+/* Estilo do rodapé */
+footer {
+  background: #6a1b9a; /* Cor de fundo do rodapé */
+  color: #fff; /* Cor do texto do rodapé */
+  text-align: center; /* Centraliza o texto */
+  padding: 15px 0; /* Espaçamento interno */
+  position: fixed; /* Fixa o rodapé na parte inferior da página */
+  width: 100%; /* Largura total */
+  bottom: 0; /* Alinha o rodapé ao fundo da página */
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2); /* Sombra no topo do rodapé */
+}
+
+/* Animação de fade-in (aparecer gradualmente) */
+@keyframes fadeIn {
+  from {
+      opacity: 0; /* Inicia invisível */
+  }
+  to {
+      opacity: 1; /* Fica completamente visível */
+  }
+}
+
+/* Animação de slide-in (deslizar de baixo para cima) */
+@keyframes slideIn {
+  from {
+      transform: translateY(20px); /* Inicia deslocado 20px para baixo */
+      opacity: 0; /* Inicia invisível */
+  }
+  to {
+      transform: translateY(0); /* Desliza para a posição normal */
+      opacity: 1; /* Fica completamente visível */
+  }
+}

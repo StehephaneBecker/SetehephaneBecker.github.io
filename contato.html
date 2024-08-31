@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Meta charset para garantir a codificação correta dos caracteres -->
+    <meta charset="UTF-8">
+    <!-- Meta viewport para garantir que a página seja responsiva em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página que aparece na aba do navegador -->
+    <title>Contato - Stehephane Becker</title>
+    <!-- Link para o arquivo CSS específico da página de contato -->
+    <link rel="stylesheet" href="contato.css">
+    <!-- Link para o Font Awesome para usar ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Navegação principal do site -->
+        <nav>
+            <ul>
+                <!-- Links de navegação com ícones do Font Awesome -->
+                <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="sobre.html"><i class="fas fa-user"></i> Sobre Mim</a></li>
+                <li><a href="formacao.html"><i class="fas fa-graduation-cap"></i> Formação</a></li>
+                <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfólio</a></li>
+                <li><a href="contato.html"><i class="fas fa-envelope"></i> Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção principal de contato -->
+        <section class="contact-section">
+            <h1>Contato</h1>
+            <!-- Formulário de contato -->
+            <form class="contact-form">
+                <!-- Campo para o nome do usuário -->
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <!-- Campo para o email do usuário -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <!-- Campo para a mensagem do usuário -->
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <!-- Botão para enviar o formulário -->
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <!-- Rodapé do site -->
+    <footer>
+        <p>&copy; 2024 Stehephane Becker</p>
+    </footer>
+</body>
+</html>
